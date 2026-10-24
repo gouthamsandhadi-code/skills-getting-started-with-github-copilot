@@ -6,7 +6,7 @@ Now let's slow down for one round and work like architects: define a strong test
 
 ### 📖 Theory: What is Copilot Plan Agent?
 
-Copilot [Plan Agent](https://code.visualstudio.com/docs/copilot/agents/planning) helps you design a solution before any code is changed.
+Copilot's [planning workflow](https://code.visualstudio.com/docs/agents/run/planning) helps you design a solution before any code is changed. In current VS Code versions, you can start it by typing `/plan` in Copilot Chat. If **Plan** is available in your mode picker, you can select it there instead.
 
 Instead of jumping straight into edits, it researches your request, asks clarifying questions, and drafts an implementation plan you can refine.
 
@@ -28,9 +28,9 @@ Instead of jumping straight into edits, it researches your request, asks clarify
 
 Your backend still has zero test coverage. Use **Plan Agent** to create a plan, answer questions, and then launch implementation.
 
-1. Open the **Copilot Chat** panel and switch to **Plan Agent**.
+1. Open **Copilot Chat** and enter `/plan` followed by the request below. If your mode picker shows **Plan**, you can select it first instead.
 
-   <img width="350" alt="image" src="https://github.com/gouthamsandhadi-code/skills-getting-started-with-github-copilot/blob/main/.github/images/plan-mode-dropdown.png?raw=true" />
+   > **Can't find Plan in the mode picker?** That's okay—use the `/plan` command in chat. Make sure you're signed in to GitHub Copilot and have the GitHub Copilot Chat extension enabled.
 
 
 1. Let's start with a broad prompt and Copilot will help us fill in the details:
@@ -38,7 +38,7 @@ Your backend still has zero test coverage. Use **Plan Agent** to create a plan, 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Let's plan for adding backend FastAPI tests in a separate tests directory.
+   > /plan Let's plan for adding backend FastAPI tests in a separate tests directory.
    > ```
 
 1. Wait for Copilot to generate its first plan. If it asks you any questions, answer them to the best of your ability. 
